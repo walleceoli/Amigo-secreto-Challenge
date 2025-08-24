@@ -1,1 +1,12 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
+
+let amigos = [];
+//Adcionando os nomes dos amigos a uma lista, não dar para adcionar o mesmo amigo duas vezes.
+function adicionarAmigo(){
+    let amigosInseridos =  document.querySelector('input').value;
+    if (amigosInseridos != amigos){
+        amigos.push(amigosInseridos);
+    }else{
+        alert('Erro');
+    }
+    console.log(amigosInseridos);
+}
