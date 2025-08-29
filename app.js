@@ -1,17 +1,19 @@
-
+//Lista vazia onde irei receber os nomes dos amigos adcionados.
 let amigos = [];
 
+//Função para exibir o texto desejado na tela puxando o id do HTML.
 function exibirTextoNaTela(id, texto){
     let campo = document.getElementById(id);
     campo.innerHTML = texto;
 }
 
+//Função utilizada para limpar os campos desejados.
 function limparCampo(id){
     let nomes = document.getElementById(id);
     nomes.value = '';
 }
 
-//Adcionando os nomes dos amigos a uma lista, não dar para adcionar o mesmo amigo duas vezes.
+// função que adciona os nomes dos amigos a uma lista.
 function adicionarAmigo(){
     let amigosInseridos = document.querySelector('input').value;
     if (amigosInseridos == "") {
@@ -29,6 +31,8 @@ function adicionarAmigo(){
     }
     return amigosInseridos;
 }
+
+// Função que sorteia os nomes dos amigos.
 function sortearAmigo(){
     if (amigos.length >  1){
        let indiceSorteado = Math.floor(Math.random()*amigos.length);
