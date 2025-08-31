@@ -12,3 +12,7 @@ Verde, se o sorteio for bem-sucedido.
 
 Vermelho, caso algo esteja inválido.
 
+Deploy do projeto
+https://amigo-secreto-challenge-jet.vercel.app/
+
+
